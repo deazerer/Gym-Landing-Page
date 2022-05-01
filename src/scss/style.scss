@@ -78,6 +78,7 @@ a{
             &-buttons{
                 display: flex;
                 column-gap: 28px;
+                color: #fff;
             }
         }
     }
@@ -106,6 +107,9 @@ a{
     font-size: 16px;
     color: $intro-text; 
 }
+.logInBtn:hover{
+    color: $intro-text;
+}
 .SignUpBtn{
     font-family: 'DMSans-Bold';
     width: 128px;
@@ -117,6 +121,9 @@ a{
     padding: 11px 35px;
     margin-left: 28px;
 }
+.SignUpBtn:hover{
+    color: $intro-bcg;
+}
 .GetStartedBtn{
     display: flex;
     justify-content: center;
@@ -127,6 +134,9 @@ a{
     color: #fff;
     font-size: 18px;
 }
+.GetStartedBtn:hover{
+    color: #fff;
+}
 .LearnMoreBtn{
     position: relative;
     display: flex;
@@ -135,6 +145,9 @@ a{
     font-family: 'DMSans-Bold';
     color: #fff;
     font-size: 16px;
+}
+.LearnMoreBtn:hover{
+    color: #fff;
 }
 .LearnMoreBtn::after{
     content: '';
