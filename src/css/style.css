@@ -104,15 +104,32 @@ a {
   font-size: 16px; }
 
 .nav-links a:hover {
-  color: #FF5045; }
+  color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 0px;
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .nav-links a:hover::after {
   content: '';
   position: absolute;
   display: block;
-  width: 12px;
   height: 1px;
-  border-bottom: 1px solid #FF5045; }
+  width: 12px;
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .logInBtn {
   font-size: 16px;
