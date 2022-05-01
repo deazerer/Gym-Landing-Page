@@ -1,1 +1,175 @@
+@font-face {
+  font-family: 'Sora-SemiBold';
+  src: url(../fonts/./Sora-SemiBold.eot);
+  src: url(../fonts/./Sora-SemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/./Sora-SemiBold.ttf) format("truetype"), url(../fonts/./Sora-SemiBold.otf) format("otf"), url(../fonts/./Sora-SemiBold.woff) format("woff"); }
 
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url(../fonts/./DMSans-Regular.eot);
+  src: url(../fonts/./DMSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/./DMSans-Regular.otf) format("otf"), url(../fonts/./DMSans-Regular.ttf) format("truetype"), url(../fonts/./DMSans-Regular.woff) format("woff"), url(../fonts/./DMSans-Regular.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url(../fonts/./DMSans-Bold.eot);
+  src: url(../fonts/./DMSans-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/./DMSans-Bold.otf) format("otf"), url(../fonts/./DMSans-Bold.ttf) format("truetype"), url(../fonts/./DMSans-Bold.woff) format("woff"), url(../fonts/./DMSans-Bold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(../fonts/./Inter-Regular.eot);
+  src: url(../fonts/./Inter-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/./Inter-Regular.ttf) format("truetype"), url(../fonts/./Inter-Regular.woff) format("woff"), url(../fonts/./Inter-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'DMSans-Regular'; }
+
+a {
+  text-decoration: none; }
+
+.intro {
+  background-color: #190807;
+  padding-top: 36px;
+  padding-bottom: 120px; }
+  .intro-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .intro-img {
+    margin-top: 64px; }
+  .intro-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 70px;
+    -webkit-column-gap: 130px;
+       -moz-column-gap: 130px;
+            column-gap: 130px; }
+    .intro-content-title {
+      color: #fff;
+      font-size: 72px;
+      font-family: 'Sora-SemiBold';
+      max-width: 570px;
+      line-height: 82px;
+      letter-spacing: -0.02em; }
+    .intro-content-body {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      row-gap: 38px; }
+      .intro-content-body-text {
+        color: #D1CAC9;
+        font-size: 18px; }
+      .intro-content-body-buttons {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-column-gap: 28px;
+           -moz-column-gap: 28px;
+                column-gap: 28px; }
+
+.nav-links {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 42px;
+     -moz-column-gap: 42px;
+          column-gap: 42px; }
+
+.nav-links a {
+  color: #D1CAC9;
+  font-size: 16px; }
+
+.nav-links a:hover {
+  color: #FF5045; }
+
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 1px;
+  border-bottom: 1px solid #FF5045; }
+
+.logInBtn {
+  font-size: 16px;
+  color: #D1CAC9; }
+
+.SignUpBtn {
+  font-family: 'DMSans-Bold';
+  width: 128px;
+  height: 50px;
+  font-size: 16px;
+  color: #190807;
+  text-align: center;
+  background-color: #fff;
+  padding: 11px 35px;
+  margin-left: 28px; }
+
+.GetStartedBtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 155px;
+  height: 60px;
+  background-color: #FF5045;
+  color: #fff;
+  font-size: 18px; }
+
+.LearnMoreBtn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'DMSans-Bold';
+  color: #fff;
+  font-size: 16px; }
+
+.LearnMoreBtn::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 87px;
+  height: 1px;
+  padding-top: 27px;
+  border-bottom: 1px solid #fff; }

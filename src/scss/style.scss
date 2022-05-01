@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Sora-SemiBold';
+    src: url(../fonts/./Sora-SemiBold.eot);
+    src: url(../fonts/./Sora-SemiBold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/./Sora-SemiBold.ttf) format('truetype'),
+         url(../fonts/./Sora-SemiBold.otf) format('otf'),
+         url(../fonts/./Sora-SemiBold.woff) format('woff');
+  }
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url(../fonts/./DMSans-Regular.eot);
+    src: url(../fonts/./DMSans-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/./DMSans-Regular.otf) format('otf'),
+        url(../fonts/./DMSans-Regular.ttf) format('truetype'),
+        url(../fonts/./DMSans-Regular.woff) format('woff'),
+        url(../fonts/./DMSans-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'DMSans-Bold';
+    src: url(../fonts/./DMSans-Bold.eot);
+    src: url(../fonts/./DMSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/./DMSans-Bold.otf) format('otf'),
+         url(../fonts/./DMSans-Bold.ttf) format('truetype'),
+         url(../fonts/./DMSans-Bold.woff) format('woff'),
+         url(../fonts/./DMSans-Bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Inter-Regular';
+    src: url(../fonts/./Inter-Regular.eot);
+    src: url(../fonts/./Inter-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/./Inter-Regular.ttf) format('truetype'),
+         url(../fonts/./Inter-Regular.woff) format('woff'),
+         url(../fonts/./Inter-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }    
+$intro-text: #D1CAC9;
+$intro-bcg: #190807;
+body{
+    font-family: 'DMSans-Regular';
+}
+a{
+    text-decoration: none;
+}
+.intro{
+    background-color: $intro-bcg;
+    padding-top: 36px;
+    padding-bottom: 120px;
+    &-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-img{
+        margin-top: 64px;
+    }
+    &-content{
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        column-gap: 130px;
+        &-title{
+            color: #fff;
+            font-size: 72px;
+            font-family: 'Sora-SemiBold';
+            max-width: 570px;
+            line-height: 82px;
+            letter-spacing: -0.02em;
+        }
+        &-body{
+            display: flex;
+            flex-direction: column;
+            row-gap: 38px;
+            &-text{
+                color: $intro-text;
+                font-size: 18px;
+            }
+            &-buttons{
+                display: flex;
+                column-gap: 28px;
+            }
+        }
+    }
+}
+.nav-links{
+    position: relative;
+    display: flex;
+    column-gap: 42px;
+}
+.nav-links a{
+    color: $intro-text;
+    font-size: 16px;
+}
+.nav-links a:hover{
+    color: #FF5045;
+}
+.nav-links a:hover::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 1px;
+    border-bottom: 1px solid #FF5045;
+}  
+.logInBtn{
+    font-size: 16px;
+    color: $intro-text; 
+}
+.SignUpBtn{
+    font-family: 'DMSans-Bold';
+    width: 128px;
+    height: 50px;
+    font-size: 16px;
+    color: $intro-bcg;
+    text-align: center;
+    background-color: #fff;
+    padding: 11px 35px;
+    margin-left: 28px;
+}
+.GetStartedBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 60px;
+    background-color: #FF5045;
+    color: #fff;
+    font-size: 18px;
+}
+.LearnMoreBtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DMSans-Bold';
+    color: #fff;
+    font-size: 16px;
+}
+.LearnMoreBtn::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 87px;
+    height: 1px;
+    padding-top: 27px;
+    border-bottom: 1px solid #fff;
+}
