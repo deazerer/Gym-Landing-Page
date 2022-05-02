@@ -134,11 +134,33 @@ a{
         }
     }
     &-img{
+        position: relative;
         margin-top: 64px;
         max-width: 1170px;
-    }
-    &-img img{
-        width: 100%;
+        &-bcg{
+            width: 100%;
+        }
+        &-play{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background-color: $intro-bcg;
+            top: 40%;
+            left: 47%;
+            transition: 0.3s;
+        }
+        &-play img{
+            margin-left: 5px;
+        }
+        &-play:hover{
+            cursor: pointer;
+            background-color: $links-bcg;
+            transition: 0.3s;
+        }
     }
     &-content{
         display: flex;
@@ -734,6 +756,13 @@ a{
             flex-wrap: wrap;
             row-gap: 30px;
         }
+        &-img{
+            &-play{
+                width: 60px;
+                height: 60px;
+                top: 35%;
+            }
+        }
     }
     .opinions{
         &-wrapper{
@@ -780,6 +809,16 @@ a{
                 &-rights{
                     padding: 10px 0 5px 0;
                 }
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .intro{
+        &-img{
+            &-play{
+                width: 45px;
+                height: 45px;
             }
         }
     }
