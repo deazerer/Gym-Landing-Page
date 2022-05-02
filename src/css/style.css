@@ -187,10 +187,17 @@ a {
   text-align: center;
   background-color: #fff;
   padding: 11px 35px;
-  margin-left: 28px; }
+  margin-left: 28px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .SignUpBtn:hover {
-  color: #190807; }
+  color: #190807;
+  background-color: #FF5045;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .GetStartedBtn {
   display: -webkit-box;
@@ -209,10 +216,17 @@ a {
   height: 60px;
   background-color: #FF5045;
   color: #fff;
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .GetStartedBtn:hover {
-  color: #fff; }
+  color: #1A0807;
+  background-color: #FFF9F5;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .LearnMoreBtn {
   position: relative;
@@ -352,6 +366,8 @@ a {
       margin-top: 18px; }
     .proud-body-btn {
       margin-top: 38px; }
+    .proud-body-btn:hover {
+      background-color: #FF5045; }
 
 .explore {
   padding: 100px 0;
@@ -399,10 +415,16 @@ a {
   display: inline-block;
   margin-top: 8px;
   color: #190807;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .item-link:hover {
-  color: #FF5045; }
+  color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .item-link::after {
   position: absolute;
@@ -411,10 +433,16 @@ a {
   height: 1px;
   border-bottom: 1px solid #190807;
   left: 0;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .item-link:hover::after {
-  border-bottom: 1px solid #FF5045; }
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .opinions {
   padding: 100px 0;
@@ -443,6 +471,35 @@ a {
       -webkit-column-gap: 24px;
          -moz-column-gap: 24px;
               column-gap: 24px; }
+      .opinions-wrapper-arrows-leftArrow, .opinions-wrapper-arrows-rightArrow {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #E7DFD9;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .opinions-wrapper-arrows-leftArrow:hover {
+        background-color: #FF5045;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .opinions-wrapper-arrows-rightArrow:hover {
+        background-color: #FF5045;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
   .opinions-quotes-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -523,6 +580,8 @@ a {
         margin-top: 18px; }
       .invocation-wrapper-body-btn {
         margin-top: 38px; }
+      .invocation-wrapper-body-btn:hover {
+        background-color: #FF5045; }
 
 .footer {
   background-color: #190807;
@@ -574,6 +633,32 @@ a {
      -moz-column-gap: 18px;
           column-gap: 18px; }
 
+.footer-column-links a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: #4D3A39;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.footer-column-links a:hover {
+  background-color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
 .footer-column-row-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -588,6 +673,7 @@ a {
   color: #fff; }
 
 .column-item-links {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -604,6 +690,34 @@ a {
   color: #D1CAC9;
   font-size: 14px;
   line-height: 26px; }
+
+.column-item-links a:hover {
+  color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.column-item-links a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 0px;
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.column-item-links a:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 12px;
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 @media (max-width: 1400px) {
   .intro-content-title {
@@ -725,9 +839,21 @@ a {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     row-gap: 30px; }
-  .opinions-wrapper-body-title {
-    font-size: 56px;
-    line-height: 66px; }
+  .opinions-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 30px; }
+    .opinions-wrapper-body {
+      margin: 0 auto;
+      text-align: center; }
+      .opinions-wrapper-body-title {
+        font-size: 56px;
+        line-height: 66px; }
   .footer-row {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -743,18 +869,6 @@ a {
     display: none; }
   .invocation-wrapper-img {
     display: none; }
-  .opinions-wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    row-gap: 30px; }
-    .opinions-wrapper-body {
-      margin: 0 auto;
-      text-align: center; }
   .footer-bottom-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

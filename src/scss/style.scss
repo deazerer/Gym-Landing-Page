@@ -39,6 +39,8 @@ $intro-bcg: #190807;
 $title-color: #1A0807;
 $elsebcg: #FFF9F5;
 $subtitle-color: #645C5B;
+$links-bcg: #FF5045;
+
 body{
     font-family: 'DMSans-Regular';
 }
@@ -182,9 +184,12 @@ a{
     background-color: #fff;
     padding: 11px 35px;
     margin-left: 28px;
+    transition: 0.5s;
 }
 .SignUpBtn:hover{
     color: $intro-bcg;
+    background-color: $links-bcg;
+    transition: 0.5s;
 }
 .GetStartedBtn{
     display: flex;
@@ -195,9 +200,13 @@ a{
     background-color: #FF5045;
     color: #fff;
     font-size: 18px;
+    transition: 0.5s;
 }
 .GetStartedBtn:hover{
-    color: #fff;
+    color: $title-color;
+    background-color: $elsebcg;
+    transition: 0.5s;
+
 }
 .LearnMoreBtn{
     position: relative;
@@ -297,6 +306,9 @@ a{
         &-btn{
             margin-top: 38px;
         }
+        &-btn:hover{
+            background-color: $links-bcg;
+        }
     }
 }
 .explore{
@@ -342,9 +354,11 @@ a{
     margin-top: 8px;
     color: $intro-bcg;
     font-weight: 700;
+    transition: 0.3s;
 }
 .item-link:hover{
     color: #FF5045;
+    transition: 0.3s;
 }
 .item-link::after{
     position: absolute;
@@ -354,9 +368,11 @@ a{
     border-bottom: 1px solid $intro-bcg;
     left: 0;
     padding-bottom: 25px;
+    transition: 0.3s;
 }
 .item-link:hover::after{
     border-bottom: 1px solid #FF5045;
+    transition: 0.3s;
 }
 .opinions{
     padding: 100px 0;
@@ -374,6 +390,24 @@ a{
         &-arrows{
             display: flex;
             column-gap: 24px;
+            &-leftArrow,
+            &-rightArrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                border: 1px solid #E7DFD9;
+                transition: 0.3s;
+            }
+            &-leftArrow:hover{
+                background-color: $links-bcg;
+                transition: 0.3s;
+            }
+            &-rightArrow:hover{
+                background-color: $links-bcg;
+                transition: 0.3s;
+            }
         }
     }
     &-quotes-row{
@@ -436,6 +470,9 @@ a{
             &-btn{
                 margin-top: 38px;
             }
+            &-btn:hover{
+                background-color: $links-bcg;
+            }
         }
     }
 }
@@ -474,6 +511,19 @@ a{
         margin-top: 28px;
         column-gap: 18px;
     }
+    &-links a{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background-color: #4D3A39;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    &-links a:hover{
+        background-color: $links-bcg;
+        transition: 0.3s;
+    }
 }
 .footer-column-row-wrapper{
     display: flex;
@@ -485,6 +535,7 @@ a{
         color: #fff;
     }
     &-links{
+        position: relative;
         display: flex;
         flex-direction: column;
         row-gap: 8px;
@@ -494,6 +545,28 @@ a{
         color: $intro-text;
         font-size: 14px;
         line-height: 26px;
+    }
+    &-links a:hover{
+        color: $links-bcg;
+        transition: 0.3s;
+    }
+    &-links a::after{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 0px;
+        border-bottom: 1px solid $links-bcg;
+        transition: 0.3s;
+    }
+    &-links a:hover::after{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 12px;
+        border-bottom: 1px solid $links-bcg;
+        transition: 0.3s;
     }
 }
 @media(max-width: 1400px){
@@ -631,7 +704,12 @@ a{
     }
     .opinions{
         &-wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
             &-body{
+                margin: 0 auto;
+                text-align: center;
                 &-title{
                     font-size: 56px;
                     line-height: 66px;
@@ -657,17 +735,6 @@ a{
         &-wrapper{
             &-img{
                 display: none;
-            }
-        }
-    }
-    .opinions{
-        &-wrapper{
-            flex-wrap: wrap;
-            justify-content: center;
-            row-gap: 30px;
-            &-body{
-                margin: 0 auto;
-                text-align: center;
             }
         }
     }
