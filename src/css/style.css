@@ -540,10 +540,12 @@ a {
         transition: 0.3s; }
       .opinions-wrapper-arrows-leftArrow:hover {
         background-color: #FF5045;
+        cursor: pointer;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
       .opinions-wrapper-arrows-rightArrow:hover {
+        cursor: pointer;
         background-color: #FF5045;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;

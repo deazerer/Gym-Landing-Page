@@ -433,9 +433,11 @@ a{
             }
             &-leftArrow:hover{
                 background-color: $links-bcg;
+                cursor: pointer;
                 transition: 0.3s;
             }
             &-rightArrow:hover{
+                cursor: pointer;
                 background-color: $links-bcg;
                 transition: 0.3s;
             }
