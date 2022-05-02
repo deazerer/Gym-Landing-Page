@@ -1,4 +1,4 @@
-# Front-end-template
+# Ссылка на сайт: https://deazerer.github.io/Gym-Landing-Page/src
 
 ## Quickstart
 
