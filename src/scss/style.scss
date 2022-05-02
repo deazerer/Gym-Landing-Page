@@ -168,11 +168,33 @@ a{
     }
 }
 .logInBtn{
+    position: relative;
     font-size: 16px;
     color: $intro-text; 
+    transition: 0.5s;
+
+}
+.logInBtn::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 1px;
+    transition: 0.5s;
+    border-bottom: 1px solid $links-bcg;
+}
+.logInBtn:hover::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 1px;
+    border-bottom: 1px solid $links-bcg;
+    transition: 0.5s;
 }
 .logInBtn:hover{
-    color: $intro-text;
+    color: $links-bcg;
+    transition: 0.3s;
 }
 .SignUpBtn{
     font-family: 'DMSans-Bold';
@@ -218,7 +240,8 @@ a{
     font-size: 16px;
 }
 .LearnMoreBtn:hover{
-    color: #fff;
+    color: $links-bcg;
+    transition: 0.3s;
 }
 .LearnMoreBtn::after{
     content: '';
@@ -228,6 +251,12 @@ a{
     height: 1px;
     padding-top: 27px;
     border-bottom: 1px solid #fff;
+    transition: 0.3s;
+}
+.LearnMoreBtn:hover::after{
+    border-bottom: 1px solid $links-bcg;
+    transition: 0.3s;
+    width: 0;
 }
 .reason{
     background-color: $elsebcg;
@@ -331,9 +360,11 @@ a{
         &-item{
             max-width: 270px;
             background-color: #fff;
+            transition: 0.5s;
         }
         &-item:hover{
             box-shadow: 0px 20px 60px rgba(25, 8, 7, 0.07);
+            transition: 0.5s;
         }
     }
 }

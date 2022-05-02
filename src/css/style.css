@@ -172,11 +172,40 @@ a {
         color: #fff; }
 
 .logInBtn {
+  position: relative;
   font-size: 16px;
-  color: #D1CAC9; }
+  color: #D1CAC9;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.logInBtn::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 1px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid #FF5045; }
+
+.logInBtn:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 1px;
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .logInBtn:hover {
-  color: #D1CAC9; }
+  color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .SignUpBtn {
   font-family: 'DMSans-Bold';
@@ -247,7 +276,10 @@ a {
   font-size: 16px; }
 
 .LearnMoreBtn:hover {
-  color: #fff; }
+  color: #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .LearnMoreBtn::after {
   content: '';
@@ -256,7 +288,17 @@ a {
   width: 87px;
   height: 1px;
   padding-top: 27px;
-  border-bottom: 1px solid #fff; }
+  border-bottom: 1px solid #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.LearnMoreBtn:hover::after {
+  border-bottom: 1px solid #FF5045;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 0; }
 
 .reason {
   background-color: #FFF9F5;
@@ -394,10 +436,16 @@ a {
     margin-top: 70px; }
     .explore-row-item {
       max-width: 270px;
-      background-color: #fff; }
+      background-color: #fff;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
     .explore-row-item:hover {
       -webkit-box-shadow: 0px 20px 60px rgba(25, 8, 7, 0.07);
-              box-shadow: 0px 20px 60px rgba(25, 8, 7, 0.07); }
+              box-shadow: 0px 20px 60px rgba(25, 8, 7, 0.07);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
 
 .item-body {
   padding: 22px 18px 27px 18px; }
