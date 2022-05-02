@@ -36,11 +36,26 @@
   }    
 $intro-text: #D1CAC9;
 $intro-bcg: #190807;
+$title-color: #1A0807;
+$elsebcg: #FFF9F5;
+$subtitle-color: #645C5B;
 body{
     font-family: 'DMSans-Regular';
 }
 a{
     text-decoration: none;
+}
+.title{
+    font-family: 'Sora-SemiBold';
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.02em;
+    color: $title-color;
+}
+.subtitle{
+    font-size: 16px;
+    line-height: 28px;
+    color: $subtitle-color;
 }
 .intro{
     background-color: $intro-bcg;
@@ -62,16 +77,14 @@ a{
         &-title{
             color: #fff;
             font-size: 72px;
-            font-family: 'Sora-SemiBold';
             max-width: 570px;
             line-height: 82px;
-            letter-spacing: -0.02em;
         }
         &-body{
             display: flex;
             flex-direction: column;
             row-gap: 38px;
-            &-text{
+            &-subtitle{
                 color: $intro-text;
                 font-size: 18px;
             }
@@ -168,4 +181,277 @@ a{
     height: 1px;
     padding-top: 27px;
     border-bottom: 1px solid #fff;
+}
+.reason{
+    background-color: $elsebcg;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    &-wrapper{
+        display: flex;
+        column-gap: 130px;
+        align-items: center;
+    }
+    &-body{
+        max-width: 470px;
+        &-desc{
+            margin-top: 18px;
+        }
+        &-statistic{
+            display: flex;
+            column-gap: 55px;
+            margin-top: 38px;
+        }
+    }
+}
+.statistic-wrapper span{
+    color: #FF5045;
+}
+.statistic-title{
+    font-family: 'Sora-SemiBold';
+    color: $intro-bcg;
+    font-size: 32px;
+}
+.features{
+    &-row{
+        display: flex;
+        flex: 1 0 25%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    &-column{
+        max-width: 270px;
+        background-color: #fff;
+        column-gap: 30px;
+    }
+}
+.item-row{
+    padding: 24px;
+}
+.item-image{
+    display: flex;
+    flex: 0 0 44px;
+}
+.item-title{
+    font-family: 'DMSans-Bold';
+    font-size: 18px;
+    margin-top: 20px;
+}
+.item-description{
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    margin-top: 4px;
+    line-height: 26px;
+}
+.proud{
+    padding: 100px 0px;
+    background-color: $elsebcg;
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        column-gap: 230px;
+    }
+    &-body{
+        max-width: 470px;
+        &-desc{
+            margin-top: 18px;
+        }
+        &-btn{
+            margin-top: 38px;
+        }
+    }
+}
+.explore{
+    padding: 100px 0;
+    background-color: $elsebcg;
+    &-title{
+        text-align: center;
+    }
+    &-subtitle{
+        text-align: center;
+        max-width: 570px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+    &-row{
+        display: flex;
+        column-gap: 30px;
+        margin-top: 70px;
+        &-item{
+            background-color: #fff;
+        }
+        &-item:hover{
+            box-shadow: 0px 20px 60px rgba(25, 8, 7, 0.07);
+        }
+    }
+}
+.item-body{
+    padding: 22px 18px 27px 18px;
+}
+.item-title{
+    font-family: 'DMSans-Bold';
+    font-size: 16px;
+}
+.item-subtitle{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.item-link{
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    color: $intro-bcg;
+    font-weight: 700;
+}
+.item-link:hover{
+    color: #FF5045;
+}
+.item-link::after{
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 1px;
+    border-bottom: 1px solid $intro-bcg;
+    left: 0;
+    padding-bottom: 25px;
+}
+.item-link:hover::after{
+    border-bottom: 1px solid #FF5045;
+}
+.opinions{
+    padding: 100px 0;
+    background-color: $elsebcg;
+    &-wrapper{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        &-body{
+            &-subtitle{
+                max-width: 570px;
+                margin-top: 18px;
+            }
+        }
+        &-arrows{
+            display: flex;
+            column-gap: 24px;
+        }
+    }
+    &-quotes-row{
+        display: flex;
+        margin-top: 70px;
+        column-gap: 30px;
+        &-item{
+            max-width: 370px;
+            background-color: #fff;
+            padding: 39px 40px 28px 43px;
+            &-body{
+                &-desc{
+                    font-size: 14px;
+                    position: relative;
+                }
+                &-author{
+                    display: flex;
+                    column-gap: 14px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    &-dots{
+        display: flex;
+        justify-content: center;
+        column-gap: 4px;
+        margin-top: 38px;
+    }
+}
+.author-name{
+    font-family: 'DMSans-Bold';
+    font-size: 14px;
+    color: $intro-bcg;
+    line-height: 24px;
+}
+.author-position{
+    font-size: 12px;
+    color: #A49C9B;
+}
+.quotes-bcg{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    opacity: 50%;
+}
+.invocation{
+    padding: 100px 0 200px 0;
+    background-color: $elsebcg;
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 230px;
+        &-body{
+            &-subtitle{
+                margin-top: 18px;
+            }
+            &-btn{
+                margin-top: 38px;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $intro-bcg;
+    padding-top: 96px;
+    &-row{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+    &-bottom{
+        background-color: #FF5045;
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-rights{
+                font-size: 14px;
+                color: #FFFEFE;
+                line-height: 26px;
+                padding: 24px 0;
+            }
+        }
+    }
+}
+.footer-column{
+    &-description{
+        color: $intro-text;
+        max-width: 311px;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    &-links{
+        display: flex;
+        margin-top: 28px;
+        column-gap: 18px;
+    }
+}
+.footer-column-row-wrapper{
+    display: flex;
+    column-gap: 140px;
+}
+.column-item{
+    &-title{
+        font-size: 18px;
+        color: #fff;
+    }
+    &-links{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        margin-top: 18px;
+    }
+    &-links a{
+        color: $intro-text;
+        font-size: 14px;
+        line-height: 26px;
+    }
 }
