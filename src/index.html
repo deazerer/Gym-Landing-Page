@@ -12,7 +12,7 @@
 		<div id="myModal" class="videomodal">
 			<div id="myModalOverlay" class="videomodal-overlay" onmouseover="toLayOpacity();" onmouseout="toDelayOpacity();"></div>
 			<div class="videomodal-content">
-				<img id="closeModal" class="videomodal-content-closebtn" src="./img/close-icon.svg" alt="" onclick="toggleVideo('hide');">
+				<img id="closeModal" class="videomodal-content-closebtn" src="./img/close-icon.svg" alt="" onclick="toggleVideo('hide');allowScroll();">
 				<div id="videom" class="videomodal-content-body">
 					<iframe id="videoframe" width="650px" height="360px" src="https://www.youtube.com/embed/KEw_r0zf10A?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
 				</div>
@@ -38,8 +38,8 @@
 				</div>
 			</nav>
 			<div class="intro-img">
-				<img class="intro-img-bcg" src="img/intro-bcg.png" alt="">
-				<div id="openmodal" class="intro-img-play">
+				<img class="intro-img-bcg " src="img/intro-bcg.png" alt="" onclick="toggleVideo();denyScroll();modal.style.display = 'flex';modal.style.opacity = '1';">
+				<div id="openmodal" class="intro-img-play openmodal">
 					<img src="img/play.svg" alt="">
 				</div>
 			</div>

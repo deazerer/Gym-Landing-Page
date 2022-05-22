@@ -1,5 +1,5 @@
 let modal = document.getElementById('myModal');
-let openbtn = document.getElementById('openmodal');
+let openbtn = document.getElementById('openmodal'); 
 let modalOverlay = document.getElementById('myModalOverlay');
 let closebtn = document.getElementById('closeModal');
 
@@ -13,17 +13,27 @@ function toggleVideo(state) {
 function toLayOpacity(){
     closebtn.style.opacity = "1";
 }
+
 function toDelayOpacity(){
     closebtn.style.opacity = "0.3";
 }
 
 openbtn.onclick = function(){
+    denyScroll();
     toggleVideo();
     modal.style.display = "flex";
     modal.style.opacity = "1";
 };
 modalOverlay.onclick = function(){
     modal.style.display = "none";
+    allowScroll();
     toggleVideo('hide');
 };
 
+function denyScroll(){
+    document.body.style.overflow = "hidden";
+}
+
+function allowScroll(){
+    document.body.style.overflow = "";
+}

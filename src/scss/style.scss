@@ -43,6 +43,7 @@ $links-bcg: #FF5045;
 
 body{
     font-family: 'DMSans-Regular';
+    
 }
 a{
     text-decoration: none;
@@ -138,6 +139,9 @@ a{
         margin-top: 64px;
         &-bcg{
             width: 100%;
+        }
+        &-bcg:hover{
+            cursor: pointer;
         }
         &-play{
             display: flex;
@@ -787,7 +791,7 @@ a{
     .videomodal{
         &-content{
             &-closebtn{
-                right: 35px;
+                right: 10%;
             }
             &-body{
                 #videoframe{
@@ -850,7 +854,7 @@ a{
     .videomodal{
         &-content{
             &-closebtn{
-                display: none;
+                right: 25px;
             }
         }
     }
@@ -858,6 +862,10 @@ a{
 @media(max-width: 576px){
     .videomodal{
         &-content{
+            &-closebtn{
+                top: -7px;
+                right: 10px;
+            }
             &-body{
                 #videoframe{
                     width: 490px;
@@ -896,6 +904,10 @@ a{
 @media(max-width: 500px){
     .videomodal{
         &-content{
+            &-closebtn{
+                top: 60px;
+                right: 15px;
+            }
             &-body{
                 #videoframe{
                     width: 345px;
@@ -916,6 +928,9 @@ a{
 @media(max-width: 360px){
     .videomodal{
         &-content{
+            &-closebtn{
+                top: 90px;
+            }
             &-body{
                 #videoframe{
                     width: 300px;
