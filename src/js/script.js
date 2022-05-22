@@ -2,6 +2,9 @@ let modal = document.getElementById('myModal');
 let openbtn = document.getElementById('openmodal'); 
 let modalOverlay = document.getElementById('myModalOverlay');
 let closebtn = document.getElementById('closeModal');
+let burgermenu = document.getElementById('BurgerLinks');
+let ModalBurger = document.getElementById('burgerModal');
+let ModalBurgerOverlay = document.getElementById('burgerModalOverlay');
 
 function toggleVideo(state) {     
     let iframe = modal.getElementsByTagName("iframe")[0].contentWindow;   
@@ -36,4 +39,17 @@ function denyScroll(){
 
 function allowScroll(){
     document.body.style.overflow = "";
+}
+
+burgermenu.addEventListener("click", function(){
+    denyScroll();
+    ModalBurger.classList.add('active');
+    ModalBurgerOverlay.classList.add('active');
+    ModalBurgerOverlay.style.position = "fixed";
+});
+ModalBurgerOverlay.onclick = function(){
+    allowScroll();
+    ModalBurger.classList.remove('active');
+    ModalBurgerOverlay.classList.remove('active');
+    ModalBurgerOverlay.style.position = "absolute";
 }

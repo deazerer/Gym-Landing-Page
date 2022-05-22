@@ -19,6 +19,22 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div id="burgerModal" class="modal-burger ">
+			<div id="burgerModalOverlay" class="modal-burger-overlay"></div>
+			<div class="modal-burger-content">
+				<img id="closeModal" class="modal-burger-closebtn" onclick="ModalBurger.classList.remove('active');ModalBurgerOverlay.style.position = 'absolute';allowScroll();ModalBurgerOverlay.classList.remove('active');" src="./img/close-icon.svg" alt="">
+				<div class="modal-links">
+					<a href="#">Home</a>
+					<a href="#courses">Courses</a>
+					<a href="#">Pricing</a>
+					<a href="#reviews">Reviews</a>
+					<a href="#" class="">Log In</a>
+					<a href="#" class="">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<section id="home" class="intro">
 		<div class="container">
 			<nav class="intro-nav">
@@ -33,7 +49,7 @@
 					<a href="#" class="logInBtn">Log In</a>
 					<a href="#" class="SignUpBtn">Sign Up</a>
 				</div>
-				<div class="intro-nav-burger">
+				<div id="BurgerLinks" class="intro-nav-burger">
 					<div class="burger"></div>
 				</div>
 			</nav>
