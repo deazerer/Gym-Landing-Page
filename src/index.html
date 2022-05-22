@@ -8,6 +8,19 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="container">
+		<div id="myModal" class="videomodal">
+			<div id="myModalOverlay" class="videomodal-overlay"></div>
+			<div class="videomodal-content">
+				<div class="videomodal-content-header">
+					<div id="closeModal" class="videomodal-content-header-closebtn" onclick="document.getElementById('myModal').style.display='none'" >&times;</div>
+				</div>
+				<div class="videomodal-content-body">
+					<iframe id="videoframe" width="600px" height="340px" src="https://www.youtube.com/embed/KEw_r0zf10A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
+				</div>
+			</div>
+		</div>
+	</div>
 	<section id="home" class="intro">
 		<div class="container">
 			<nav class="intro-nav">
@@ -28,7 +41,7 @@
 			</nav>
 			<div class="intro-img">
 				<img class="intro-img-bcg" src="img/intro-bcg.png" alt="">
-				<div class="intro-img-play">
+				<div id="openmodal" class="intro-img-play">
 					<img src="img/play.svg" alt="">
 				</div>
 			</div>
@@ -381,5 +394,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="./js/script.js"></script>
 </body>
 </html>
