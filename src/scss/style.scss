@@ -649,6 +649,9 @@ a{
         cursor: pointer;
     }
     &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         width: 650px;
         height: 400px;
@@ -657,7 +660,7 @@ a{
             width: 30px;
             height: 30px;
             right: -35px;
-            top: -35px;
+            top: -20px;
             opacity: 0.3;
             transition: 0.3s;
         }
@@ -781,6 +784,19 @@ a{
     }
 }
 @media(max-width: 767px){
+    .videomodal{
+        &-content{
+            &-closebtn{
+                right: 35px;
+            }
+            &-body{
+                #videoframe{
+                    width: 500px;
+                    height: 350px;
+                }
+            }
+        }
+    }
     .title{
         text-align: center;
     }
@@ -830,7 +846,26 @@ a{
         }
     }
 }
+@media(max-width: 630px){
+    .videomodal{
+        &-content{
+            &-closebtn{
+                display: none;
+            }
+        }
+    }
+}
 @media(max-width: 576px){
+    .videomodal{
+        &-content{
+            &-body{
+                #videoframe{
+                    width: 490px;
+                    height: 340px
+                }
+            }
+        }
+    }
     .proud{
         &-body{
             &-img{
@@ -859,6 +894,16 @@ a{
     }
 }
 @media(max-width: 500px){
+    .videomodal{
+        &-content{
+            &-body{
+                #videoframe{
+                    width: 345px;
+                    height: 200px
+                }
+            }
+        }
+    }
     .intro{
         &-img{
             &-play{
