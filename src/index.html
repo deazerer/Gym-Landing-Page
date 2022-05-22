@@ -10,13 +10,11 @@
 <body>
 	<div class="container">
 		<div id="myModal" class="videomodal">
-			<div id="myModalOverlay" class="videomodal-overlay"></div>
+			<div id="myModalOverlay" class="videomodal-overlay" onmouseover="toLayOpacity();" onmouseout="toDelayOpacity();"></div>
 			<div class="videomodal-content">
-				<div class="videomodal-content-header">
-					<div id="closeModal" class="videomodal-content-header-closebtn" onclick="document.getElementById('myModal').style.display='none'" >&times;</div>
-				</div>
-				<div class="videomodal-content-body">
-					<iframe id="videoframe" width="600px" height="340px" src="https://www.youtube.com/embed/KEw_r0zf10A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
+				<img id="closeModal" class="videomodal-content-closebtn" src="./img/close-icon.svg" alt="" onclick="toggleVideo('hide');">
+				<div id="videom" class="videomodal-content-body">
+					<iframe id="videoframe" width="650px" height="360px" src="https://www.youtube.com/embed/KEw_r0zf10A?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
 				</div>
 			</div>
 		</div>

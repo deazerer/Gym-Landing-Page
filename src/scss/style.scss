@@ -639,7 +639,6 @@ a{
     opacity: 0;
     z-index: 100;
     display: none;
-    
     &-overlay{
         position: fixed;
         top: 0;
@@ -651,35 +650,21 @@ a{
     }
     &-content{
         position: relative;
-        border: 2px solid #fff;
         width: 650px;
         height: 400px;
-        &-header{
-            display: flex;
-            justify-content: end;
-            // padding-right: 5px;
-            box-shadow: inset 0px 0px 2px 0px #fff;
-            background-color: gray;
-            &-closebtn{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                display: inline-block;
-                padding: 10px;
-                transition: 0.3s;
-            }
-            &-closebtn:hover{
-                background-color: $links-bcg;
-                transition: 0.3s;
-            }
-        } 
-        &-body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            background-color: #ccc;
+        &-closebtn{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: -35px;
+            top: -35px;
+            opacity: 0.3;
+            transition: 0.3s;
+        }
+        &-closebtn:hover{
+            opacity: 1;
+            transition: 0.3s;
+            cursor: pointer;
         }
     }
 }
