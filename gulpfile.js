@@ -116,7 +116,7 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function() {
 	gulp.watch('src/scss/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
 	gulp.watch('src/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
-	gulp.watch(['src/js/script.js', 'src/js/mail-form.js', 'src/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
+	gulp.watch(['src/js/script.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'sass', 'scripts'));
