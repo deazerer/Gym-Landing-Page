@@ -2,7 +2,6 @@ let modal = document.getElementById('myModal');
 let openbtn = document.getElementById('openmodal'); 
 let VideoModalOverlay = document.getElementById('myModalOverlay');
 let closebtn = document.getElementById('closeModal');
-let burgermenu = document.getElementById('BurgerLinks');
 let ModalBurger = document.getElementById('burgerModal');
 let ModalBurgerOverlay = document.getElementById('burgerModalOverlay');
 let Burger = document.getElementById('Burger');
@@ -41,20 +40,27 @@ function denyScroll(){
 function allowScroll(){
     document.body.style.overflow = "";
 }
-
-burgermenu.addEventListener("click", function(){
+let burgerMenu = document.querySelector('.burger');
+let burgerWrapper = document.querySelector('.burger-wrapper');
+burgerWrapper.addEventListener("click", function(){
     denyScroll();
-    Burger.style.width = '30px';
-    Burger.style.transition = '0.3s';
+    burgerMenu.classList.add('active')
     ModalBurger.classList.add('active');
     ModalBurgerOverlay.classList.add('active');
     ModalBurgerOverlay.style.position = "fixed";
 });
 ModalBurgerOverlay.onclick = function(){
     allowScroll();
-    Burger.style.width = '15px';
-    Burger.style.transition = '0.3s';
+    burgerMenu.classList.remove('active')
     ModalBurger.classList.remove('active');
     ModalBurgerOverlay.classList.remove('active');
     ModalBurgerOverlay.style.position = "absolute";
 }
+const closeModalBtn = document.querySelector('.modal-burger-closebtn')
+ closeModalBtn.addEventListener('click', ()=>{
+     ModalBurger.classList.remove('active');
+     burgerMenu.classList.remove('active')
+     ModalBurgerOverlay.style.position = 'absolute';
+     allowScroll();
+     ModalBurgerOverlay.classList.remove('active');
+ })
