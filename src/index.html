@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gym Landing Page</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -241,87 +242,97 @@
 					</div>
 				</div>
 				<div class="opinions-wrapper-arrows">
-					<div class="opinions-wrapper-arrows-leftArrow">
+					<div class="opinions-wrapper-arrows-leftArrow prevBtn">
 						<img src="img/arrow-left.svg" alt="">
 					</div>
-					<div class="opinions-wrapper-arrows-rightArrow">
+					<div class="opinions-wrapper-arrows-rightArrow nextBtn">
 						<img src="img/arrow-right.svg" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="opinions-quotes-row">
-				<div class="opinions-quotes-row-item">
-					<div class="opinions-quotes-row-item-body">
-						<div class="opinions-quotes-row-item-body-desc subtitle">
-							<div class="quotes-bcg">
-								<img src="img/quotes-bcg.svg" alt="">
-							</div>
-							Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
-						</div>
-						<div class="opinions-quotes-row-item-body-author">
-							<div class="author-image">
-								<img src="img/1-quotes-author.png" alt="">
-							</div>
-							<div class="author-data">
-								<div class="author-name">
-									Mitchell Starc
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="opinions-quotes-row-item">
+							<div class="opinions-quotes-row-item-body">
+								<div class="opinions-quotes-row-item-body-desc subtitle">
+									<div class="quotes-bcg">
+										<img src="img/quotes-bcg.svg" alt="">
+									</div>
+									Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
 								</div>
-								<div class="author-position">
-									UI Designer
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="opinions-quotes-row-item">
-					<div class="opinions-quotes-row-item-body">
-						<div class="opinions-quotes-row-item-body-desc subtitle">
-							<div class="quotes-bcg">
-								<img src="img/quotes-bcg.svg" alt="">
-							</div>
-							Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
-						</div>
-						<div class="opinions-quotes-row-item-body-author">
-							<div class="author-image">
-								<img src="img/2-quotes-author.png" alt="">
-							</div>
-							<div class="author-data">
-								<div class="author-name">
-									Peter Moor
-								</div>
-								<div class="author-position">
-									UI Designer
+								<div class="opinions-quotes-row-item-body-author">
+									<div class="author-image">
+										<img src="img/1-quotes-author.png" alt="">
+									</div>
+									<div class="author-data">
+										<div class="author-name">
+											Mitchell Starc
+										</div>
+										<div class="author-position">
+											UI Designer
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="opinions-quotes-row-item">
-					<div class="opinions-quotes-row-item-body">
-						<div class="opinions-quotes-row-item-body-desc subtitle">
-							<div class="quotes-bcg">
-								<img src="img/quotes-bcg.svg" alt="">
-							</div>
-							Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
-						</div>
-						<div class="opinions-quotes-row-item-body-author">
-							<div class="author-image">
-								<img src="img/3-quotes-author.png" alt="">
-							</div>
-							<div class="author-data">
-								<div class="author-name">
-									Joe Burns
+					<div class="swiper-slide">
+						<div class="opinions-quotes-row-item">
+							<div class="opinions-quotes-row-item-body">
+								<div class="opinions-quotes-row-item-body-desc subtitle">
+									<div class="quotes-bcg">
+										<img src="img/quotes-bcg.svg" alt="">
+									</div>
+									Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
 								</div>
-								<div class="author-position">
-									UI Designer
+								<div class="opinions-quotes-row-item-body-author">
+									<div class="author-image">
+										<img src="img/2-quotes-author.png" alt="">
+									</div>
+									<div class="author-data">
+										<div class="author-name">
+											Peter Moor
+										</div>
+										<div class="author-position">
+											UI Designer
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="opinions-quotes-row-item">
+							<div class="opinions-quotes-row-item-body">
+								<div class="opinions-quotes-row-item-body-desc subtitle">
+									<div class="quotes-bcg">
+										<img src="img/quotes-bcg.svg" alt="">
+									</div>
+									Just amazing fitness traing centre. I was admitted there for building my body. Now I have got a good shape.
+								</div>
+								<div class="opinions-quotes-row-item-body-author">
+									<div class="author-image">
+										<img src="img/3-quotes-author.png" alt="">
+									</div>
+									<div class="author-data">
+										<div class="author-name">
+											Joe Burns
+										</div>
+										<div class="author-position">
+											UI Designer
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="opinions-dots">
-				<img src="img/opinions-dots.svg" alt="">
+			<div class="pagination">
+				<div class="pagination-line"></div>
+				<div class="pagination-line"></div>
+				<div class="pagination-line"></div>
 			</div>
 		</div>
 	</section>
@@ -408,6 +419,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
 </html>

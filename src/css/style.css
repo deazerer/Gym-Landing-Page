@@ -1174,3 +1174,51 @@ a {
     padding: 70px 0; }
   .opinions {
     padding: 70px 0; } }
+
+.swiper {
+  width: 100%;
+  height: 300px; }
+  .swiper-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3.62px;
+     -moz-column-gap: 3.62px;
+          column-gap: 3.62px; }
+  .pagination-line {
+    width: 14px;
+    height: 2px;
+    background-color: #D0CBC7;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .pagination-line-active {
+      width: 29px;
+      height: 2px;
+      background-color: #FF5045;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
