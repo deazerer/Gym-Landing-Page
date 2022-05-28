@@ -74,7 +74,6 @@ const swiper = new Swiper('.swiper', {
             direction: 'vertical',
         },
         767: {
-            direction: 'horizontal',
             slidesPerView: 2,
         },
         1200: {
